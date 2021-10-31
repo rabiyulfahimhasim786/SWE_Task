@@ -1,0 +1,17 @@
+version: "2.0"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say welcome when user says thanks
+    steps:
+      - intent: thanks
+      - action: utter_welcome
+
+  - rule: show cases when user asks for any cases
+    steps:
+      - intent: getCases
+      - action: action_get_cases

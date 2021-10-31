@@ -1,0 +1,58 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: thanks
+    examples: |
+      - thanks
+      - thank you
+      - thanks for the result
+      - thankyou for the response
+      - thanks it was helpful
+      - really cool!! thanks!
+      - hey! nice to meet you
+      - thanks, this is useful
+      - thank you
+      - awesome - thanks bot
+
+  - intent: getCases
+    examples: |
+      - Hey, what's the current confirmed cases in [Delhi](state), [Maharashtra](state) etc?
+      - Hey, what’s the total count of confirmed cases in [Andaman and Nicobar Islands](state), Maharashtra, [Jammu & Kashmir](state) altogether?
+      - What’s the confirmed case count from 1st Oct 2020 to 12th Oct 2020?
+      - What’s the confirmed case count from 1st Oct 2020 to 12th Oct 2020?
+      - what is the confirmed case count between 1st Oct 2021 & today?
+
+  - intent: states
+    examples: |
+      - please find cases in [Bihar](state)
+      - cases in [Assam](state) and [Jharkhand](state)
