@@ -1,0 +1,28 @@
+version: "3"
+services:
+  bot:
+    container_name: "bot"
+    build:
+      context: bot
+    restart: always
+    ports:
+      - "5005:5005"
+    logging:
+      driver: "journald"
+  actions:
+    container_name: "actions"
+    build:
+      context: actions
+    ports:
+      - "5055:5055"
+    restart: always
+    logging:
+      driver: "journald"
+  duckling:
+    container_name: "duckling"
+    image: "rasa/duckling:latest"
+    restart: always
+    logging:
+      driver: "journald"
+    ports:
+      - "8000:8000"
